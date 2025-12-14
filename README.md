@@ -2,7 +2,6 @@
 
 A full-stack Kata Management System built with Node.js/Express/TypeScript backend and React/Vite frontend. This application allows users to browse, search, and purchase sweets, while admins can manage inventory.
 
-![Kata Banner](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800)
 
 ## 📋 Table of Contents
 
