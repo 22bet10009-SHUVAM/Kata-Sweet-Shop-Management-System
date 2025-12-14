@@ -4,7 +4,7 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "https://YOUR-BACKEND-URL.onrender.com/api/:splat"
+  to = "https://sweet-shop-api-8yfs.onrender.com"
   status = 200
   force = true
 
