@@ -122,11 +122,6 @@ export default function ShopPage() {
     }
   };
 
-  const handleDeleteClick = (sweet: Sweet) => {
-    setSelectedSweet(sweet);
-    setShowDeleteModal(true);
-  };
-
   const handleDeleteConfirm = async () => {
     if (!selectedSweet) return;
     setDeleteLoading(true);
