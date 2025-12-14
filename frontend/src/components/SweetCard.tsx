@@ -1,6 +1,8 @@
 import type { Sweet } from '../types';
 import { FiShoppingCart, FiEdit2, FiPackage, FiInfo } from 'react-icons/fi';
 
+const API_BASE_URL = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
+
 interface SweetCardProps {
   sweet: Sweet;
   onPurchase?: (sweet: Sweet) => void;
@@ -12,6 +14,14 @@ interface SweetCardProps {
 export default function SweetCard({ sweet, onPurchase, onEdit, onRestock, isAdmin }: SweetCardProps) {
   const isOutOfStock = sweet.quantity === 0;
   const isLowStock = sweet.quantity > 0 && sweet.quantity < 10;
+
+  const getImageSource = () => {
+    if (!sweet.imageUrl) return '';
+    if (sweet.imageUrl.startsWith('http')) return sweet.imageUrl;
+    if (!API_BASE_URL) return sweet.imageUrl;
+    const normalizedPath = sweet.imageUrl.startsWith('/') ? sweet.imageUrl : `/${sweet.imageUrl}`;
+    return `${API_BASE_URL}${normalizedPath}`;
+  };
 
   const getStockBadgeClass = () => {
     if (isOutOfStock) return 'stock-badge out-of-stock';
@@ -34,9 +44,9 @@ export default function SweetCard({ sweet, onPurchase, onEdit, onRestock, isAdmi
     <div className="sweet-card">
       {/* Image Section */}
       <div className="sweet-card-image">
-        {sweet.imageUrl ? (
+        {getImageSource() ? (
           <img
-            src={sweet.imageUrl}
+            src={getImageSource()}
             alt={sweet.name}
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
