@@ -249,6 +249,7 @@ The test suite covers:
 
 ### Shop Page
 - Dashboard view: ![Dashboard](docs/screenshots/Dashboard.png)
+- Dashboard view: ![Dashboard](docs/screenshots/Dashboard2.png)
 
 
 ### Admin Dashboard
@@ -310,6 +311,15 @@ However, AI assistance required:
 
 The AI served as an intelligent assistant, but final decisions and quality assurance remained my responsibility.
 
+## 🌐 Live Demo
+(without images)
+
+| Layer | URL | Notes |
+|-------|-----|-------|
+| Frontend (Netlify) | [https://your-app.netlify.app](https://693e63552088c8a04950f6ce--eloquent-biscotti-1cde8d.netlify.app/) |
+| Backend (Render) | [https://sweet-shop-api.onrender.com]([https://sweet-shop-api.onrender.com](https://sweet-shop-api-8yfs.onrender.com)) |
+
+> Update these links after deployment so reviewers can access the live demo quickly.
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
