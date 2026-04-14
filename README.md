@@ -316,8 +316,8 @@ The AI served as an intelligent assistant, but final decisions and quality assur
 
 | Layer | URL | Notes |
 |-------|-----|-------|
-| Frontend (Netlify) | [https://your-app.netlify.app]([https://693e63552088c8a04950f6ce--eloquent-biscotti-1cde8d.netlify.app/](https://eloquent-biscotti-1cde8d.netlify.app/)) |
-| Backend (Render) | [https://sweet-shop-api.onrender.com]([https://sweet-shop-api.onrender.com](https://sweet-shop-api-8yfs.onrender.com)) |
+| Frontend (Netlify) | [https://your-app.netlify.app](https://eloquent-biscotti-1cde8d.netlify.app/) |
+| Backend (Render) | [https://sweet-shop-api.onrender.com](https://sweet-shop-api.onrender.com) |
 
 ## 📄 License
 
